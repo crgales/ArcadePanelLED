@@ -1,0 +1,9 @@
+{
+  "additionalFiles": "",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "",
+  "fqbn": "esp32:esp32:adafruit_matrixportal_esp32s3",
+  "hardwareFolders": "/home/cgales/.arduino15/packages/esp32/hardware/esp32/3.3.12,/home/cgales/.arduino15/packages/esp32/hardware/esp32/3.3.12",
+  "otherLibrariesFolders": "/home/cgales/Arduino/libraries",
+  "sketchLocation": "/home/cgales/ArcadeLEDPanelSerial/MatrixPanelSketch"
+}
