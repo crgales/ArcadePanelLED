@@ -7,7 +7,7 @@ SERIAL_PORT="/dev/ttyACM0"
 PIXELCADE_HOME="/userdata/system/pixelcade"
 
 # Define the log file location
-LOG_FILE="/tmp/game_trigger.log"
+LOG_FILE="/tmp/ledmarquee_game_trigger.log"
 
 # Add a timestamp to every log entry
 timestamp() {
@@ -51,6 +51,6 @@ case "$1" in
         echo "[$(timestamp)] [gameStop] Game exited. Clearing marquee." >> "$LOG_FILE"
         "$LED_MARQUEE_HOME/venv/bin/python3" \
             "$LED_MARQUEE_HOME/MatrixPanelHost/MatrixPanelHost.py" \
-            -p "$SERIAL_PORT" clear >> "$LOG_FILE" 2>&1
+            -p "$SERIAL_PORT" image "$LED_MARQUEE_HOME/arcade.png" >> "$LOG_FILE" 2>&1
         ;;
 esac

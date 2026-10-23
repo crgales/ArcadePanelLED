@@ -195,3 +195,4 @@ mkdir -p /userdata/system/ledmarquee && cd /userdata/system/ledmarquee
 curl -L https://github.com/crgales/ArcadePanelLED/archive/refs/heads/main.tar.gz | tar -xz -C /userdata/system/ledmarquee --strip-components=1
 
 ## 3. Initialize the required Python .venv
+chmod +x ledmarquee_initialize.sh && ./ledmarquee_initialize.sh
